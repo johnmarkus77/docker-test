@@ -6,7 +6,7 @@ export async function createUser(username, password) {
             'INSERT INTO users (username, password) VALUES (?, ?)',
             [username, password]
         );
-        return results.insertId; 
+        return results;
     } catch (error) {
         throw error;
     }

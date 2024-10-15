@@ -44,8 +44,10 @@ import { createUser, getUserByUsername } from '../models/userCreation.js'
 export async function registerUser(req, res) {
     const { username, password } = req.body;
 
+    console.log(username);
+    console.log(password);
     // database library takes care of creating the user
-    const userID = await createUser(username, password );
+    const userID = await createUser(username, password);
 
     console.log('User created with ID:', userID);
 

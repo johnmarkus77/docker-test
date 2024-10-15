@@ -10,8 +10,8 @@ import * as accountController from '../controllers/accountController.js';
     - accountFunctions -> login handles the /login route logic.
     - accountFunction ->  register handles the /register route logic.
 */
-
 const router = express.Router();
+
 router.post('/register', accountController.registerUser);
 
 export default router;
